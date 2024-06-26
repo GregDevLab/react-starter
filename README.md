@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Boilerplate ViteJS React TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Introduction](#introduction)
+- [Dépendances et Ressources](#dépendances-et-ressources)
+  - [Environnement](#environement)
+  - [ORM](#orm)
+  - [Styles](#styles)
+  - [Test](#test)
+***
 
-Currently, two official plugins are available:
+## Introduction
+<!-- -->
+Ce projet est un boilerplate conçu pour accélérer le développement d'applications modernes avec React et TypeScript. Utilisant ViteJS pour une compilation ultra-rapide, ce starter kit intègre également les outils suivants pour une expérience de développement complète et efficace :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Shadcn** : Une bibliothèque de composants UI pour construire des interfaces élégantes et réactives.
+- **Tailwind CSS** : Un framework CSS utility-first pour un design rapide et responsive sans quitter votre HTML.
+- **Styled-components** : Permet de styliser vos composants React avec des capacités réelles de CSS, utilisant des templates littéraux.
+- **Vitest** : Un framework de test performant pour JavaScript, idéal pour les projets utilisant Vite.
+- **MSW (Mock Service Worker)** : Pour mocker les APIs lors du développement et des tests, permettant une simulation précise des requêtes réseau.
+- **React Testing Library** : Une bibliothèque de tests pour React qui permet de tester les composants de manière efficace et accessible.
 
-## Expanding the ESLint configuration
+Ce boilerplate est parfait pour les développeurs cherchant à mettre en place rapidement un projet robuste, testable et maintenable, tout en utilisant les technologies les plus récentes et populaires du développement web.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Commencez votre projet sans délai et avec les meilleures pratiques déjà en place !
 
-- Configure the top-level `parserOptions` property like this:
+## Dépendances et Ressources
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Ce boilerplate inclut plusieurs dépendances clés dont la documentation peut être extrêmement utile pour le développement et la maintenance de vos projets. Voici une liste des principales bibliothèques utilisées, avec des liens vers leur documentation officielle :
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+##### Environement
+- **React** ([Documentation](https://react.dev)): Une bibliothèque JavaScript pour construire des interfaces utilisateur.
+- **TypeScript** ([Documentation](https://www.typescriptlang.org/docs/)): Superset de JavaScript qui ajoute des types statiques.
+- **ViteJS** ([Documentation](https://vitejs.dev/guide/)): Un outil de build moderne qui offre une expérience de développement plus rapide.
+
+##### Styles
+- **Shadcn** ([Documentation](https://ui.shadcn.com/)): Une bibliothèque de composants UI pour React.
+- **Tailwind CSS** ([Documentation](https://tailwindcss.com/docs)): Un framework CSS utility-first pour un design rapide et responsive.
+- **Styled-components** ([Documentation](https://styled-components.com/docs)): Permet de styliser vos composants React.
+
+##### Test
+- **Vitest** ([Documentation](https://vitest.dev/guide/)): Framework de test performant pour JavaScript.
+- **MSW (Mock Service Worker)** ([Documentation](https://mswjs.io/docs/)): Pour mocker les APIs lors du développement et des tests.
+- **React Testing Library** ([Documentation](https://testing-library.com/docs/react-testing-library/intro/)) ([Extension](https://github.com/testing-library/jest-dom)): Bibliothèque de tests pour React.
+
+Chaque outil a été choisi pour sa performance et sa facilité d'intégration, assurant ainsi une base solide pour vos projets.
