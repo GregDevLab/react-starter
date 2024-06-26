@@ -3,7 +3,6 @@
 - [Introduction](#introduction)
 - [Dépendances et Ressources](#dépendances-et-ressources)
   - [Environnement](#environement)
-  - [ORM](#orm)
   - [Styles](#styles)
   - [Test](#test)
 ***
