@@ -1,13 +1,14 @@
+import { Button } from "@/components/ui/button"
 import { useState } from 'react'
-
 
 const ButtonTest = () => {
 	const [content, sectContent] = useState('click')
 	return (
-		<button 
-			onClick={() => sectContent(prev => prev === 'click' ? 'Is clicked' : 'click')}>
+		<Button
+			onClick={() => sectContent(prev => prev === 'click' ? 'Is clicked' : 'click')}
+			>
 				{content}
-		</button>
+		</Button>
 	)
 }
 

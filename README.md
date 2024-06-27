@@ -13,7 +13,6 @@ Ce projet est un boilerplate conçu pour accélérer le développement d'applica
 
 - **Shadcn** : Une bibliothèque de composants UI pour construire des interfaces élégantes et réactives.
 - **Tailwind CSS** : Un framework CSS utility-first pour un design rapide et responsive sans quitter votre HTML.
-- **Styled-components** : Permet de styliser vos composants React avec des capacités réelles de CSS, utilisant des templates littéraux.
 - **Vitest** : Un framework de test performant pour JavaScript, idéal pour les projets utilisant Vite.
 - **MSW (Mock Service Worker)** : Pour mocker les APIs lors du développement et des tests, permettant une simulation précise des requêtes réseau.
 - **React Testing Library** : Une bibliothèque de tests pour React qui permet de tester les composants de manière efficace et accessible.
@@ -34,7 +33,6 @@ Ce boilerplate inclut plusieurs dépendances clés dont la documentation peut ê
 ##### Styles
 - **Shadcn** ([Documentation](https://ui.shadcn.com/)): Une bibliothèque de composants UI pour React.
 - **Tailwind CSS** ([Documentation](https://tailwindcss.com/docs)): Un framework CSS utility-first pour un design rapide et responsive.
-- **Styled-components** ([Documentation](https://styled-components.com/docs)): Permet de styliser vos composants React.
 
 ##### Test
 - **Vitest** ([Documentation](https://vitest.dev/guide/)): Framework de test performant pour JavaScript.
