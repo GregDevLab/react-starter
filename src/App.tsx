@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import './App.css'
+import ButtonTest from "./components/button"
 
 function App() {
 	const [user, setUser] = useState<any>()
@@ -21,6 +22,7 @@ function App() {
 		<>
 			<h1>hello world</h1>
 			{user && <p data-testid="user">{user.firstName}</p>}
+			<ButtonTest />
 		</>
 	)
 }
