@@ -5,6 +5,7 @@
   - [Environnement](#environement)
   - [Styles](#styles)
   - [Test](#test)
+  - [Routing](#routing)
 ***
 
 ## Introduction
@@ -16,6 +17,7 @@ Ce projet est un boilerplate conçu pour accélérer le développement d'applica
 - **Vitest** : Un framework de test performant pour JavaScript, idéal pour les projets utilisant Vite.
 - **MSW (Mock Service Worker)** : Pour mocker les APIs lors du développement et des tests, permettant une simulation précise des requêtes réseau.
 - **React Testing Library** : Une bibliothèque de tests pour React qui permet de tester les composants de manière efficace et accessible.
+- **React Router** : Une bibliothèque de routage dynamique pour React, permettant de gérer facilement la navigation dans vos applications.
 
 Ce boilerplate est parfait pour les développeurs cherchant à mettre en place rapidement un projet robuste, testable et maintenable, tout en utilisant les technologies les plus récentes et populaires du développement web.
 
@@ -30,6 +32,7 @@ Ce boilerplate inclut plusieurs dépendances clés dont la documentation peut ê
 - **TypeScript** ([Documentation](https://www.typescriptlang.org/docs/)): Superset de JavaScript qui ajoute des types statiques.
 - **ViteJS** ([Documentation](https://vitejs.dev/guide/)): Un outil de build moderne qui offre une expérience de développement plus rapide.
 
+
 ##### Styles
 - **Shadcn** ([Documentation](https://ui.shadcn.com/)): Une bibliothèque de composants UI pour React.
 - **Tailwind CSS** ([Documentation](https://tailwindcss.com/docs)): Un framework CSS utility-first pour un design rapide et responsive.
@@ -39,4 +42,8 @@ Ce boilerplate inclut plusieurs dépendances clés dont la documentation peut ê
 - **MSW (Mock Service Worker)** ([Documentation](https://mswjs.io/docs/)): Pour mocker les APIs lors du développement et des tests.
 - **React Testing Library** ([Documentation](https://testing-library.com/docs/react-testing-library/intro/)) ([Extension](https://github.com/testing-library/jest-dom)): Bibliothèque de tests pour React.
 
+##### Routing
+- **React Router** ([Documentation](https://reactrouter.com/en/main)): Gestionnaire de routage pour applications React.
+
 Chaque outil a été choisi pour sa performance et sa facilité d'intégration, assurant ainsi une base solide pour vos projets.
+
