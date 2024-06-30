@@ -1,0 +1,1 @@
+export interface Auth {isLogged: boolean, role: string }

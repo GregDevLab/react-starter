@@ -12,7 +12,7 @@ const DashboardLayout = () => {
 								<NavLink to="."  >Users</NavLink>
 							</li>
 							<li className="bg-black p-2 px-4 w-fit">
-								<NavLink to="posts"  >Posts</NavLink>
+								<NavLink to="posts">Posts</NavLink>
 							</li>
 						</ul>
 					</nav>

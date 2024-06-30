@@ -1,11 +1,16 @@
-import Nav from "@/components/navigation/nav"
-import { Outlet } from "react-router-dom"
+import Nav from "@/components/navigation/nav";
+import { Outlet, useNavigation } from "react-router-dom";
 
 const AppLayout = () => {
+	const navigation = useNavigation();
 	return (
 		<>
 			<Nav />
-			<Outlet />
+			{
+				navigation.state === "loading" ?
+				<div>Chargement ...</div> :
+				<Outlet />
+			}
 		</>
 	)
 }

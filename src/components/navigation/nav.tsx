@@ -13,6 +13,12 @@ const Nav = () => {
 				<li>
 					<NavLink to='dashboard' className={({ isActive }) => isActive ? "text-red-500" : "text-white"}>About</NavLink>
 				</li>
+				<li>
+					<NavLink to='admin' className={({ isActive }) => isActive ? "text-red-500" : "text-white"}>Admin</NavLink>
+				</li>
+				<li>
+					<NavLink to='login' className={({ isActive }) => isActive ? "text-red-500" : "text-white"}>Login</NavLink>
+				</li>
 			</ul>
 		</nav>
 	)
