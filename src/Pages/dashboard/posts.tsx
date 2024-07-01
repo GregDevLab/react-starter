@@ -8,15 +8,16 @@ import { NavLink, useActionData, useLoaderData, useSearchParams, useSubmit } fro
 const Posts = () => {
 	const submit = useSubmit();
 	const [_searchParams, setSearchParams] = useSearchParams();
-	const errors = useActionData() as FormError | undefined
+	const errors = useActionData() as FormError | undefined 
 	const data = useLoaderData();
 	const formRef = useRef<HTMLFormElement>(null)
+
 	return (
 		<div>
 			<NavLink to=".." className="text-sm text-yellow-500">{"<-"} go back</NavLink>
 			<FormAction method='POST' className="text-black">
 				<label htmlFor="name" className="sr-only">Nom</label>
-				<input type="text" name="name" id="name" onChange={() => delete errors?.name}/>
+				<input type="text" name="name" id="name" />
 				{errors?.name && <p>{errors.name}</p>}
 				<button>submit</button>
 			</FormAction>

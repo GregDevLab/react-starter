@@ -1,16 +1,24 @@
 import Nav from "@/components/navigation/nav";
-import { Outlet, useNavigation } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Auth } from "@/types/auth.type";
+import { useState } from "react";
 
+import { Await, NavLink, Outlet, useLoaderData } from "react-router-dom";
 const AppLayout = () => {
-	const navigation = useNavigation();
+	const loader = useLoaderData() as Auth
+	const [user, setUser] = useState(loader.user);
+
 	return (
 		<>
-			<Nav />
-			{
-				navigation.state === "loading" ?
-				<div>Chargement ...</div> :
-				<Outlet />
-			}
+			<Await resolve={loader.user}>
+				<Nav user={user} >
+					{user.isLogged ? 
+						<Button onClick={() => setUser({isLogged:false, role: 'user'})}>logout</Button> :
+						<Button><NavLink to='login'>Login</NavLink></Button>
+					}
+				</Nav>
+				<Outlet context={[user, setUser]}/>
+			</Await>
 		</>
 	)
 }

@@ -1,6 +1,7 @@
+import { ActionParameters } from "@/types/actions.type"
 import { FormError } from "@/types/form.type"
 
-export const demoActions = async ({request, params}:any) => {
+export const demoActions = async ({request, params}:ActionParameters) => {
 	console.log("🚀 ~ demoActions ~ params:", params)
 	console.log("🚀 ~ demoActions ~ request:", request)
 	switch(request.method) {
@@ -12,13 +13,13 @@ export const demoActions = async ({request, params}:any) => {
 }
 
 
-const registerPost = async(request:any) => {
+const registerPost = async(request:Request) => {
 	const data = await request.formData()
 	const errors: FormError = {} 
 
-	const name = data.get('name')
+	const name = data.get('name') as string | null
 
-	if(name.length < 3) {
+	if(name && name.length < 3) {
 		errors.name = "Le nom est trop court"
 	}
 

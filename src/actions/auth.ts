@@ -1,12 +1,18 @@
-export const isAuthenticated = (isAuth:boolean) => {
-	const user = {
-		isLogged : isAuth,
-		role: 'user'
-	}
+import {User } from "@/types/auth.type";
+import { defer } from "react-router-dom"
 
-	return new Promise(resolve => {
+export const isAuthenticated = async () => {
+	const user: User = {
+		isLogged: false,
+		role: 'user',
+	};
+
+
+	const data = new Promise<User>((resolve) => {
 		setTimeout(() => {
-			resolve(user)
-		}, 2000)
-	})
+			resolve(user);
+		}, 2000);
+	});
+
+	return defer({ user: data });
 }

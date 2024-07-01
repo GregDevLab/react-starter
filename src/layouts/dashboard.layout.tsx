@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom"
 
 const DashboardLayout = () => {
+
 	return (
 		<div className="bg-blue-500">
 			<div>dashboard</div>

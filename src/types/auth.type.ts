@@ -1,1 +1,10 @@
-export interface Auth {isLogged: boolean, role: string }
+export interface Auth {
+	user :{
+		isLogged: boolean, role: string
+	}
+}
+
+export interface User {
+	isLogged: boolean,
+	role: string
+}
