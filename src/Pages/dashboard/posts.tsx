@@ -1,6 +1,6 @@
 import { FormAction } from "@/components/forms/form";
 import { FormError } from "@/types/form.type";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink, useActionData, useLoaderData, useSearchParams, useSubmit } from "react-router-dom";
 
 
@@ -9,16 +9,21 @@ const Posts = () => {
 	const submit = useSubmit();
 	const [_searchParams, setSearchParams] = useSearchParams();
 	const errors = useActionData() as FormError | undefined 
+	const [formErrors, setFormErrors] = useState<FormError | undefined>()  
 	const data = useLoaderData();
 	const formRef = useRef<HTMLFormElement>(null)
+
+	useEffect(() => {
+		setFormErrors(errors)
+	}, [errors])
 
 	return (
 		<div>
 			<NavLink to=".." className="text-sm text-yellow-500">{"<-"} go back</NavLink>
 			<FormAction method='POST' className="text-black">
 				<label htmlFor="name" className="sr-only">Nom</label>
-				<input type="text" name="name" id="name" />
-				{errors?.name && <p>{errors.name}</p>}
+				<input type="text" name="name" id="name" onChange={() => setFormErrors({...errors, name: ""})}/>
+				{formErrors?.name && <p>{formErrors.name}</p>}
 				<button>submit</button>
 			</FormAction>
 			<FormAction 
